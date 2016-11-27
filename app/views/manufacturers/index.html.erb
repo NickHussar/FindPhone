@@ -1,0 +1,18 @@
+<h1>Developers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Devices</th>
+  </tr>
+
+  <% @phones.each do |phone| %>
+    <tr>
+      <td><%= manufacturer.name %></td>
+      <td><%= manufacturer.description %></td>
+      <td><%= manufacturer.devices %></td>
+      <td><%= link_to 'Show', manufacturer_path(manufacturer) %></td>
+    </tr>
+  <% end %>
+</table>

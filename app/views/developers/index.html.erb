@@ -1,0 +1,18 @@
+<h1>Developers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Devices</th>
+  </tr>
+
+  <% @phones.each do |phone| %>
+    <tr>
+      <td><%= developer.name %></td>
+      <td><%= developer.description %></td>
+      <td><%= developer.devices %></td>
+      <td><%= link_to 'Show', developer_path(developer) %></td>
+    </tr>
+  <% end %>
+</table>
