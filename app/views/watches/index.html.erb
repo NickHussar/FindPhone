@@ -1,0 +1,16 @@
+<h1>Watches</h1>
+
+<table>
+  <tr>
+    <th>Developer</th>
+    <th>Manufacturer</th>
+  </tr>
+
+  <% @watches.each do |watch| %>
+    <tr>
+      <td><%= watch.developer %></td>
+      <td><%= watch.manufacturer %></td>
+      <td><%= link_to 'Show', watch_path(watch) %></td>
+    </tr>
+  <% end %>
+</table>

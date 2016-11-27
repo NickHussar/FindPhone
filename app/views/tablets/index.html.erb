@@ -1,0 +1,16 @@
+<h1>Tablets</h1>
+
+<table>
+  <tr>
+    <th>Developer</th>
+    <th>Manufacturer</th>
+  </tr>
+
+  <% @tablets.each do |tablet| %>
+    <tr>
+      <td><%= tablet.developer %></td>
+      <td><%= tablet.manufacturer %></td>
+      <td><%= link_to 'Show', tablet_path(tablet) %></td>
+    </tr>
+  <% end %>
+</table>

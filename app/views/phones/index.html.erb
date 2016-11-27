@@ -1,0 +1,16 @@
+<h1>Phones</h1>
+
+<table>
+  <tr>
+    <th>Developer</th>
+    <th>Manufacturer</th>
+  </tr>
+
+  <% @phones.each do |phone| %>
+    <tr>
+      <td><%= phone.developer %></td>
+      <td><%= phone.manufacturer %></td>
+      <td><%= link_to 'Show', phone_path(phone) %></td>
+    </tr>
+  <% end %>
+</table>
