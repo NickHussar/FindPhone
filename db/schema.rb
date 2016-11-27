@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+# encoding: UTF-8
+>>>>>>> a6804734b7ec9b687fb33bb4859bcb697438063a
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,6 +14,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161123171516) do
 
   create_table "developers", force: :cascade do |t|
@@ -197,5 +202,25 @@ ActiveRecord::Schema.define(version: 20161123171516) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
+=======
+ActiveRecord::Schema.define(version: 20161108174620) do
+
+  create_table "articles", force: :cascade do |t|
+    t.string   "title"
+    t.text     "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.string   "commenter"
+    t.text     "body"
+    t.integer  "article_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "comments", ["article_id"], name: "index_comments_on_article_id"
+>>>>>>> a6804734b7ec9b687fb33bb4859bcb697438063a
 
 end

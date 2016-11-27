@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FindPhone</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic" rel="stylesheet" type="text/css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header>
+      <button class="burger">
+        <%= image_tag "ic_menu_grey_24px.svg" %>
+      </button>
+      <div class="logo">
+        <%= image_tag "ic_logo.svg" %>
+      </div>
+    </header>
+    <div class="sidebar noselect">
+      <ul>
+        <span class="sb-h">Brands</span>
+        <li>
+          <input id="sb-apple" type="checkbox" name="1">
+          <label for="sb-apple">Apple</label>
+        </li>
+        <li>
+          <input id="sb-samsung" type="checkbox" name="2">
+          <label for="sb-samsung">Samsung</label>
+        </li>
+        <li>
+          <input id="sb-google" type="checkbox" name="3">
+          <label for="sb-google">Google</label>
+        </li>
+      </ul>
+      <p>
+        <label class="sb-h" for="amount">Screen size:</label>
+        <input type="text" id="amount" readonly style="border:0; color:#009688;">
+      </p>
+      <div id="slider-range"></div>
+    </div>
+    <div class="grey"></div>
+    <div class="content">
+      <div class="main-image">
+        <div>
+          <h1>FindPhone</h1>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

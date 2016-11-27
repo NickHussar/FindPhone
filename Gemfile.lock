@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+<<<<<<< HEAD
     actioncable (5.0.0.1)
       actionpack (= 5.0.0.1)
       nio4r (~> 1.2)
@@ -43,6 +44,51 @@ GEM
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.2.x)
+=======
+    actionmailer (4.2.5.1)
+      actionpack (= 4.2.5.1)
+      actionview (= 4.2.5.1)
+      activejob (= 4.2.5.1)
+      mail (~> 2.5, >= 2.5.4)
+      rails-dom-testing (~> 1.0, >= 1.0.5)
+    actionpack (4.2.5.1)
+      actionview (= 4.2.5.1)
+      activesupport (= 4.2.5.1)
+      rack (~> 1.6)
+      rack-test (~> 0.6.2)
+      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionview (4.2.5.1)
+      activesupport (= 4.2.5.1)
+      builder (~> 3.1)
+      erubis (~> 2.7.0)
+      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    activejob (4.2.5.1)
+      activesupport (= 4.2.5.1)
+      globalid (>= 0.3.0)
+    activemodel (4.2.5.1)
+      activesupport (= 4.2.5.1)
+      builder (~> 3.1)
+    activerecord (4.2.5.1)
+      activemodel (= 4.2.5.1)
+      activesupport (= 4.2.5.1)
+      arel (~> 6.0)
+    activesupport (4.2.5.1)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    arel (6.0.3)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
+    builder (3.2.2)
+    byebug (9.0.6)
+    coffee-rails (4.1.1)
+      coffee-script (>= 2.2.0)
+      railties (>= 4.0.0, < 5.1.x)
+>>>>>>> a6804734b7ec9b687fb33bb4859bcb697438063a
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -61,17 +107,25 @@ GEM
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
+<<<<<<< HEAD
+=======
+    json (1.8.3)
+>>>>>>> a6804734b7ec9b687fb33bb4859bcb697438063a
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+<<<<<<< HEAD
     method_source (0.8.2)
+=======
+>>>>>>> a6804734b7ec9b687fb33bb4859bcb697438063a
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.9.1)
     multi_json (1.12.1)
+<<<<<<< HEAD
     nio4r (1.2.1)
     nokogiri (1.6.8.1-x86-mingw32)
       mini_portile2 (~> 2.1.0)
@@ -103,6 +157,40 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (11.3.0)
+=======
+    nokogiri (1.6.8.1-x86-mingw32)
+      mini_portile2 (~> 2.1.0)
+    rack (1.6.4)
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rails (4.2.5.1)
+      actionmailer (= 4.2.5.1)
+      actionpack (= 4.2.5.1)
+      actionview (= 4.2.5.1)
+      activejob (= 4.2.5.1)
+      activemodel (= 4.2.5.1)
+      activerecord (= 4.2.5.1)
+      activesupport (= 4.2.5.1)
+      bundler (>= 1.3.0, < 2.0)
+      railties (= 4.2.5.1)
+      sprockets-rails
+    rails-deprecated_sanitizer (1.0.3)
+      activesupport (>= 4.2.0.alpha)
+    rails-dom-testing (1.0.7)
+      activesupport (>= 4.2.0.beta, < 5.0)
+      nokogiri (~> 1.6.0)
+      rails-deprecated_sanitizer (>= 1.0.1)
+    rails-html-sanitizer (1.0.3)
+      loofah (~> 2.0)
+    railties (4.2.5.1)
+      actionpack (= 4.2.5.1)
+      activesupport (= 4.2.5.1)
+      rake (>= 0.8.7)
+      thor (>= 0.18.1, < 2.0)
+    rake (11.3.0)
+    rdoc (4.2.2)
+      json (~> 1.4)
+>>>>>>> a6804734b7ec9b687fb33bb4859bcb697438063a
     sass (3.4.22)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -110,6 +198,12 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+<<<<<<< HEAD
+=======
+    sdoc (0.4.2)
+      json (~> 1.7, >= 1.7.7)
+      rdoc (~> 4.0)
+>>>>>>> a6804734b7ec9b687fb33bb4859bcb697438063a
     sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -126,6 +220,7 @@ GEM
     turbolinks-source (5.0.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+<<<<<<< HEAD
     tzinfo-data (1.2016.9)
       tzinfo (>= 1.0.0)
     uglifier (3.0.3)
@@ -138,12 +233,24 @@ GEM
     websocket-driver (0.6.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+=======
+    tzinfo-data (1.2016.7)
+      tzinfo (>= 1.0.0)
+    uglifier (3.0.2)
+      execjs (>= 0.3.0, < 3)
+    web-console (2.3.0)
+      activemodel (>= 4.0)
+      binding_of_caller (>= 0.7.2)
+      railties (>= 4.0)
+      sprockets-rails (>= 2.0, < 4.0)
+>>>>>>> a6804734b7ec9b687fb33bb4859bcb697438063a
 
 PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
   byebug
+<<<<<<< HEAD
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails
@@ -158,3 +265,19 @@ DEPENDENCIES
 
 BUNDLED WITH
    1.13.6
+=======
+  coffee-rails (~> 4.1.0)
+  jbuilder (~> 2.0)
+  jquery-rails
+  rails (= 4.2.5.1)
+  sass-rails (~> 5.0)
+  sdoc (~> 0.4.0)
+  sqlite3
+  turbolinks
+  tzinfo-data
+  uglifier (>= 1.3.0)
+  web-console (~> 2.0)
+
+BUNDLED WITH
+   1.11.2
+>>>>>>> a6804734b7ec9b687fb33bb4859bcb697438063a

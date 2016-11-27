@@ -13,9 +13,14 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
+<<<<<<< HEAD
 /tmp/*
 !/log/.keep
 !/tmp/.keep
 
 # Ignore Byebug command history file.
 .byebug_history
+=======
+!/log/.keep
+/tmp
+>>>>>>> a6804734b7ec9b687fb33bb4859bcb697438063a

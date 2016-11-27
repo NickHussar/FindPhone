@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
 
   root 'welcome#index'
 
@@ -22,4 +23,10 @@ Rails.application.routes.draw do
 
   root 'developers#developers'
   
+=======
+  resources :articles do
+    resources :comments
+  end
+  root 'main#index'
+>>>>>>> a6804734b7ec9b687fb33bb4859bcb697438063a
 end

@@ -1,0 +1,160 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*::selection {
+  background-color: #FF6F00;
+  color: #FFE57F;
+}
+
+body {
+  height: 100%;
+  padding-top: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+.noselect {
+  -webkit-user-select: none;
+}
+
+header {
+  position: fixed;
+  margin-top: -50px;
+  z-index: 10;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+}
+
+header .burger {
+  margin: 0 10px 0 10px;
+  height: 24px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: none;
+}
+
+header .logo {
+  width: 50px;
+  justify-content: space-around;
+  display: flex;
+  cursor: pointer;
+  filter: grayscale(1);
+  transition-duration: 0.3s;
+}
+
+header .logo:hover {
+  filter: grayscale(0);
+}
+
+header .logo img {
+  height: 30px;
+}
+
+.sidebar {
+  overflow-y: scroll;
+  position: fixed;
+  padding: 15px 0 20px 20px;
+  transition-duration: 0.5s;
+  transform: translateX(-275px);
+  z-index: 10;
+  width: 200px;
+  height: calc(100% - 70px);
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFF;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar *::selection {
+  color: #FFF;
+  background-color: #009688;
+}
+
+.sidebar-active {
+  transform: translateX(0px);
+}
+
+.sidebar .sb-h {
+  color: #009688;
+  cursor: pointer;
+}
+
+.sidebar ul li {
+  margin: 10px 0 10px -10px;
+}
+
+.sidebar ul li input[type="checkbox"] {
+  opacity: 0;
+  float: left;
+  width: 20px;
+}
+
+.sidebar ul li input[type="checkbox"] + label {
+  clear: none;
+  padding: 5px 0 5px 30px;
+  cursor: pointer;
+  background: url(<%= asset_path 'checkbox.png' %>) left center no-repeat;
+}
+
+.sidebar ul li input[type="checkbox"]:checked + label {
+  background-image: url(<%= asset_path 'checkbox_checked.png' %>);
+}
+
+.grey {
+  transition-duration: 0.5s;
+  display: none;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+}
+
+.grey-active {
+  display: block;
+}
+
+.content {
+  height: 2000px;
+  width: 100%;
+  background-color: #EEEEEE;
+}
+
+.main-image {
+  height: 500px;
+  background-image: url(<%= asset_path 'background.png' %>);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.main-image h1 {
+  padding: 50px 0 0 50px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 80px;
+}
